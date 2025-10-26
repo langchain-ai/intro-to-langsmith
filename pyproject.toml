@@ -1,0 +1,26 @@
+[project]
+name = "intro-to-langsmith"
+version = "0.0.0"
+description = "Educational materials for learning LangSmith"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain",
+    "langgraph",
+    "langgraph-sdk",
+    "langgraph-checkpoint-sqlite",
+    "langsmith>=0.2.0",
+    "langchain-community",
+    "langchain-core",
+    "langchain-openai",
+    "langchain-text-splitters",
+    "notebook",
+    "python-dotenv",
+    "lxml",
+    "scikit-learn",
+    "pandas",
+    "pyarrow",
+]
+
+[tool.uv]
+dev-dependencies = []
