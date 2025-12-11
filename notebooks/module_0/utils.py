@@ -7,7 +7,7 @@ from langchain_openai import OpenAIEmbeddings
 
 def get_vector_db_retriever():
     persist_path = os.path.join(tempfile.gettempdir(), "union.parquet")
-    embd = OpenAIEmbeddings()
+    embd = OpenAIEmbeddings(chunk_size=1000)
 
     # If vector store exists, then load it
     if os.path.exists(persist_path):
