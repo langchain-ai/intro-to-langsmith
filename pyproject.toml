@@ -3,7 +3,7 @@ name = "intro-to-langsmith"
 version = "0.0.0"
 description = "Educational materials for learning LangSmith"
 readme = "README.md"
-requires-python = ">=3.12,<3.14"
+requires-python = ">=3.12"
 dependencies = [
     "langchain",
     "langgraph",
