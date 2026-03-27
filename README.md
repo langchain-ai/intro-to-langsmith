@@ -240,7 +240,7 @@ pip install -r requirements.txt
 
 ### Model Providers
 
-If you don't have an OpenAI API key, you can sign up [here](https://openai.com/index/openai-api/). The course primarily uses gpt-4o and gpt-4o-mini which are inexpensive.
+If you don't have an OpenAI API key, you can sign up [here](https://openai.com/index/openai-api/). The course primarily uses gpt-4o and gpt-4o-mini which are inexpensive.  Note that the free plan has reduced limits, so a payment plan or pre-pay is recommended.
 
 This course has been created using particular models and model providers.  You can use other providers, but you will need to update the API keys in the .env file and make some necessary code changes. LangChain supports many chat model providers. [More Info](https://docs.langchain.com/oss/python/integrations/providers/all_providers).
 
