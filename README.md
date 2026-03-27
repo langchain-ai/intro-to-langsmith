@@ -57,7 +57,8 @@ uv sync
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# WinPS:  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+source .venv/bin/activate  # WinPS: .venv\Scripts\activate.ps1
 pip install -r requirements.txt
 ```
 
@@ -80,7 +81,7 @@ uv run python env_utils.py
 <summary>Using pip</summary>
 
 ```bash
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate  # WinPS: .venv\Scripts\activate.ps1
 python env_utils.py
 ```
 
@@ -103,7 +104,7 @@ uv run jupyter lab
 <summary>Using pip</summary>
 
 ```bash
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate  # WinPS: .venv\Scripts\activate.ps1
 jupyter lab
 ```
 
@@ -174,7 +175,7 @@ If you see an error like `ModuleNotFoundError: No module named 'dotenv'`, you're
 - Use `uv run python env_utils.py` (recommended), or
 - Activate the virtual environment first:
   - macOS/Linux: `source .venv/bin/activate`
-  - Windows: `.venv\Scripts\activate`
+  - Windows Powershell: `.venv\Scripts\activate.ps1`
 
 </details>
 
@@ -232,7 +233,8 @@ If you are using pip instead of uv, you may prefer using pyenv to manage your Py
 pyenv install 3.12
 pyenv local 3.12
 python -m venv .venv
-source .venv/bin/activate
+# WinPS:  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+source .venv/bin/activate  # WinPS: .venv\Scripts\activate.ps1
 pip install -r requirements.txt
 ```
 
