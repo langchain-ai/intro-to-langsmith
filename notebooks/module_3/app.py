@@ -1,5 +1,4 @@
 import os
-import tempfile
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders.sitemap import SitemapLoader
 from langchain_community.vectorstores import SKLearnVectorStore
@@ -21,7 +20,7 @@ Use three sentences maximum and keep the answer concise.
 openai_client = OpenAI()
 
 def get_vector_db_retriever():
-    persist_path = os.path.join(tempfile.gettempdir(), "union.parquet")
+    persist_path = os.path.join(os.getcwd(), "..", "resources", "union.parquet")
     embd = OpenAIEmbeddings()
 
     # If vector store exists, then load it

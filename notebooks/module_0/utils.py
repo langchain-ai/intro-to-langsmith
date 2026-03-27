@@ -1,12 +1,11 @@
 import os
-import tempfile
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders.sitemap import SitemapLoader
 from langchain_community.vectorstores import SKLearnVectorStore
 from langchain_openai import OpenAIEmbeddings
 
 def get_vector_db_retriever():
-    persist_path = os.path.join(tempfile.gettempdir(), "union.parquet")
+    persist_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "resources", "union.parquet")
     embd = OpenAIEmbeddings()
 
     # If vector store exists, then load it

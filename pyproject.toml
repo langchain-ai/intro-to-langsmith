@@ -3,7 +3,7 @@ name = "intro-to-langsmith"
 version = "0.0.0"
 description = "Educational materials for learning LangSmith"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "langchain",
     "langgraph",
@@ -15,12 +15,10 @@ dependencies = [
     "langchain-openai",
     "langchain-text-splitters",
     "notebook",
-    "python-dotenv",
+    "python-dotenv>=1.2.0",
     "lxml",
     "scikit-learn",
     "pandas",
     "pyarrow",
+    "ipywidgets>=8.1.8",
 ]
-
-[tool.uv]
-dev-dependencies = []
