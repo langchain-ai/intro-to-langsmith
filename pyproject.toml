@@ -9,7 +9,7 @@ dependencies = [
     "langgraph",
     "langgraph-sdk",
     "langgraph-checkpoint-sqlite",
-    "langsmith>=0.2.0",
+    "langsmith>=0.7.31",
     "langchain-community",
     "langchain-core",
     "langchain-openai",
