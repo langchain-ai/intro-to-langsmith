@@ -15,7 +15,7 @@ dependencies = [
     "langchain-openai",
     "langchain-text-splitters",
     "notebook",
-    "python-dotenv>=1.2.0",
+    "python-dotenv>=1.2.2",
     "lxml",
     "scikit-learn",
     "pandas",
