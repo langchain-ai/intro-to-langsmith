@@ -21,4 +21,5 @@ dependencies = [
     "pandas",
     "pyarrow",
     "ipywidgets>=8.1.8",
+    "deepagents>=0.7.28",
 ]
